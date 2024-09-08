@@ -38,3 +38,18 @@ Reference: Digital Kinetic Artwork - Portraits by BREAKFAST. (2024, July 16). BR
 
 ### 1.2.4 Related Project 4 ###
 ‌
+![Alt text](./Images/Asteroid_Suit.webp)
+
+As seen above, the name of the suit is Ceres and it is a grey, jumpsuit like wearable technology that from afar looks like it just randomly vibrates as the user walks around with the jumpsuit on. However, in more detail the jumpsuit is equipped with small buzzers located near the user's shoulder blades and back, providing a buzz like sensation to the user's skin. The contributor as to why these buzzers are occuring on the users shoulder blades and back is due to the jumpsuit having microcontrollers connected to NASA's Near Earth Object API where these vibrations are indications of asteroids nearing Earth's orbit. It is quite clear that this related project is an example of how you can use geographic location of anything to then display in another form, with this example it is showing how the use of NASA's API obtains the geographic locations of asteroids near Earth's orbit, indicated by the jumpsuit lighting up and vibrating. With an example like this, it shows how open minded you can be in regards to using geographic location as a means to display any other form of responsive design. In relation to our project, an extended possibility using geographic location could be having the users phone record tracks and paths the user follows for furutre reference through similiar use with an API.
+
+Reference: Plaugic, L. (2018, April 14). These three designers make wearables that measure the world around you. The Verge. https://www.theverge.com/2018/4/14/17233430/wearable-media-fashion-tech-nyc-ceres-jumpsuit-interactive
+
+### 1.2.5 Related Project 5 ###
+
+![Alt text](./Images/Human_Gyroscope.png)
+
+Implementation of a gyroscope was created which could rotate 360 degrees in all dimensions, being controlled with a software-GUI paired with some type of joystick. Implementation of this project consists in the field of simulators such as a plane simulator, the design focuses on a gyroscopic view paired with software development, the prototype is more so seen as an idea for future investors who wish to apply this theology with a full scale, real-time used model, being much larger in price and scale. Regarding our project, this ideology can be used when considering the use of a gyroscope with the design, it will be viewed as treated in a similiar manner as seen in this example. The key difference however would be the implmentation of this gyroscopic use being obtained from the user's phone which then displays the user's tilt angle on the web app. In future development there could also be more extended use with a gyroscope such as utilising it for gesture-based navigation, motion controls, integrated augmented reality features responding to the user's movements, and etc.
+
+Reference: Svensson, M. and Johannesson, J. (2013). The Human Gyroscope. [PDF] p.45. Available at: https://www.diva-portal.org/smash/get/diva2:647956/FULLTEXT01.pdf [Accessed 8 Sep. 2024].
+
+‌
