@@ -48,4 +48,6 @@ Implementation of a gyroscope was created which could rotate 360 degrees in all 
 
 **Reference:** Svensson, M. and Johannesson, J. (2013). The Human Gyroscope. [PDF] p.45. Available at: https://www.diva-portal.org/smash/get/diva2:647956/FULLTEXT01.pdf [Accessed 8 Sep. 2024].
 
+What the flip
+
 ‌
