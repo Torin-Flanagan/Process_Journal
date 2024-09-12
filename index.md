@@ -3,7 +3,7 @@
 
 ## 1. Conceptualisation ##
 ### 1.1 Design Intent ###
-Summary: A web app that cab be used by a user through a website address, then asking for permission to use the user's phone/device's geographic location, camera, and gyroscope for input. As a result, the web app will then be able to produce an output displaying the speed, which is calculated through obtaining the time travelled from point A - point B, along with presenting a display of the current lean/tilt angle. Lastly, it is key as prior knowledge that this web app can be used for anything bike/motorbike related due to the the app utilising the user's geographic location, camera, and gyroscope from their phone while riding a bike/motorbike. It should also be noted that a bike/motorcycle involved activity is not the only situation when this web app can be used, other examples could include using the web app while sailing, flying, snowboarding, etc.
+Summary: A web app that can be used by a user through a website address, then asking for permission to use the user's phone/device's geographic location, camera, and gyroscope for input. As a result, the web app will then be able to produce an output displaying the speed, which is calculated through obtaining the time travelled from point A - point B, along with presenting a display of the current lean/tilt angle. Lastly, it is key as prior knowledge that this web app can be used for anything bike/motorbike related due to the the app utilising the user's geographic location, camera, and gyroscope from their phone while riding a bike/motorbike. It should also be noted that a bike/motorcycle involved activity is not the only situation when this web app can be used, other examples could include using the web app while sailing, flying, snowboarding, etc.
 
 ### 1.2 Research ###
 Through using research of other similiar project found on the web, it has helped to gain a deeper understanding of what myself, Sean, and Jay are aiming to achieve for the project, along with how we are going to do so. Research found during this phase will greatly affect what we aim to create paired with each phase during development. This will include how we develop the web interface, how this interface communicates with the user's phone, and what informational components of the user's phone we are aiming to extract data from? The influence of this research will be seen more apparent later within this process journal.
@@ -48,6 +48,36 @@ Implementation of a gyroscope was created which could rotate 360 degrees in all 
 
 **Reference:** Svensson, M. and Johannesson, J. (2013). The Human Gyroscope. [PDF] p.45. Available at: https://www.diva-portal.org/smash/get/diva2:647956/FULLTEXT01.pdf [Accessed 8 Sep. 2024].
 
-What the hell
+### 1.2.6 Related Project 6 ###
+
+![Alt text](./Images/Device_Orientation_API.jpg)
+
+The above image displays a simple web page that displays the z-axis, x-axis, and y-axis of the user's phone once permission has been granted to use the device's hardware. An Inertial Measurement Unit (IMU) is used for the webpage, an IMU combines 3-axis accelerometers with 3-axis gyroscopes, and sometimes 3-axis magnetometers to then get a more accurate display of the device's orientation. On top of this, the IMU used does onboard analysis, combining these different sensors applied with signal processing to then produce a smooth and useful signal as the final output. The way this API works is that an event listener is added and listens for the event type 'deviceorientation', the event itself contains three variables represetning the z-axis, x-axis, and y-axis. From this the event handler then simply updates the text readouts of these rotation values as a web app. This API is highly valuable for our project, as one of our core components(being the gyroscope) relies directly on the Device Orientation API, together with geographic location and camera functionality, the gyroscope forms a key element of our web app's design. It is most likely that this Device Orientation API will be used in our project as it meets exactly the needs we require for the gyroscope aspect of the web app, however, we will then try to edit and improve this API's functionality and appearance to better suit our web app's needs.
+
+Here is the link to access the live web app: https://tgifford-usc.github.io/WebAPIExamples/
+
+**Reference:** Log In to Canvas. (2024). Usc.edu.au. https://learn.usc.edu.au/courses/27670/pages/8-dot-2-%7C-device-orientation-api?module_item_id=632692
+
+### 1.2.7 Related Project 7 ###
+
+![Alt text](./Images/Media_Capture_API.png)
+
+Similiar to Related Project 6, this image showcases another simple web page but instead it displays a live camera (top) that when the 'Take photo' button is pressed, the web page takes a photo of the user and displays the photo in a static form (bottom). However, this web page doesn't save the photos and only holds the most recent photo taken once the 'Take photo' button has been triggered. This webpage operates by treating the device's cameras as video cameras, generating a live video stream directly from the camera. 
+The process begins by using the Media Capture API to access the camera's video stream. This stream is then attached to an HTML video element, allowing for the display of the live feed, extraction of individual frames, or both. A final step involves rendering a captured video frame onto an HTML canvas element, converting it to an image format, such as PNG. From there, the captured frame can be manipulated or processed in any desired way. In relation to our mobile web app, the Media Capture API will also most likely be used due to the API showcasing very similiar results to what we are aiming to design for the web app. However, this API will be modified and adapted to better suit the needs of our web app, but it is hard to tell what these changes could include to the Media Capture API as of this stage in the design.
+
+**Reference:** Log In to Canvas. (2024). Usc.edu.au. https://learn.usc.edu.au/courses/27670/pages/8-dot-3-%7C-media-capture-api?module_item_id=632693
+
+### 1.2.8 Related Project 8 ###
+
+![Alt text](./Images/Geolocation_API.png)
+
+Once again another API is being used here, however, this time it is the use of a Geolocation API that displays your current latitude and longitiude once the 'Show my location' button has been pressed on a simple web app. This web page is extremely simple just like the last two APIs, leaving a lot of room to add and customise the API to better suit our web app project. The way this API works is that the user's location is described using the GeolocationPosition object instance, which contains a GeolocationCoordinates object instance inside. There are only two things contained within the Geolocation instance, a coords property which includes the GeolocationCoordinates instance and a timestamp property holding a timestamp (given as Unix time in milliseconds of when the position data was obtained). Inside the GeolocationCoordinates instance there are a number of properties, but the two being used are the latitude and longitude, other bits of information you can obtain from the GeolocationCoordinate's object include altitude, speed, what direction the device is facing, and accuracy measures of the altitude, longitude, and latitude data. For our web app project, this API satisfies the requirements for geographic location functionality but will need adjustments and modifications to align more closely with our desired outcomes, additionally it must be optimized to integrate seamlessly with the rest of our web app.
+
+**Reference:** Using the Geolocation API - Web APIs | MDN. (n.d.). Developer.mozilla.org. https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API
+
+
+
+
+
 
 ‌
