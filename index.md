@@ -73,9 +73,7 @@ The process begins by using the Media Capture API to access the camera's video s
 
 Once again another API is being used here, however, this time it is the use of a Geolocation API that displays your current latitude and longitiude once the 'Show my location' button has been pressed on a simple web app. This web page is extremely simple just like the last two APIs, leaving a lot of room to add and customise the API to better suit our web app project. The way this API works is that the user's location is described using the GeolocationPosition object instance, which contains a GeolocationCoordinates object instance inside. There are only two things contained within the Geolocation instance, a coords property which includes the GeolocationCoordinates instance and a timestamp property holding a timestamp (given as Unix time in milliseconds of when the position data was obtained). Inside the GeolocationCoordinates instance there are a number of properties, but the two being used are the latitude and longitude, other bits of information you can obtain from the GeolocationCoordinate's object include altitude, speed, what direction the device is facing, and accuracy measures of the altitude, longitude, and latitude data. For our web app project, this API satisfies the requirements for geographic location functionality but will need adjustments and modifications to align more closely with our desired outcomes, additionally it must be optimized to integrate seamlessly with the rest of our web app.
 
-**Reference:** Using the Geolocation API - Web APIs | MDN. (n.d.). Developer.mozilla.org. https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API
-
-this should work
+**Reference:** Using the Geolocation API Web APIs, MDN. (n.d.). Developer.mozilla.org. https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API
 
 
 
