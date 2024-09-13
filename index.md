@@ -82,7 +82,7 @@ Here is the link to access the live web app: https://developer.mozilla.org/en-US
 ### 1.3 Other Research ###
 The following paragraph relates directly to this video:
 
-https://www.youtube.com/watch?v=wPpuBOSU7_w
+![Alt text](https://www.youtube.com/watch?v=wPpuBOSU7_w)
 
 Further research into how a gyroscope in a smartphone works reveals that its primary function is to measure the device's angular velocity, which means it tracks rotational angles over time. Although this concept is simple in theory, its practical applications in smartphones are vast. For instance, the gyroscope is used for functions like straightening photos during editing, improving low-light photography through optical image stabilization, and enhancing augmented reality experiences by accurately displaying objects in a given environment. In summary, the gyroscope tracks changes in the smartphone's angular velocity, enabling a wide range of functionalities that rely on motion and orientation, leading to a wide variety of endless opportunities using a gyroscope.
 
