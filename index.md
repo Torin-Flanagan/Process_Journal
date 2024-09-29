@@ -82,12 +82,28 @@ Here is the link to access the live web app: https://developer.mozilla.org/en-US
 ### 1.3 Other Research ###
 The following paragraph relates directly to this video:
 
-![Alt text](https://www.youtube.com/watch?v=wPpuBOSU7_w)
+{% include youtube.html id="wPpuBOSU7_w" %}
+
+(https://www.youtube.com/watch?v=wPpuBOSU7_w)
+
 
 Further research into how a gyroscope in a smartphone works reveals that its primary function is to measure the device's angular velocity, which means it tracks rotational angles over time. Although this concept is simple in theory, its practical applications in smartphones are vast. For instance, the gyroscope is used for functions like straightening photos during editing, improving low-light photography through optical image stabilization, and enhancing augmented reality experiences by accurately displaying objects in a given environment. In summary, the gyroscope tracks changes in the smartphone's angular velocity, enabling a wide range of functionalities that rely on motion and orientation, leading to a wide variety of endless opportunities using a gyroscope.
 
 
 
+
+## 2. Strucutre of Presentation ##
+### 2.1 Concept Foundation ###
+The concept of my project is that it will be a web app with a simple to use interface involving three core sensor components, a gyroscope, the user's camera, and the user's location. It is uncertain what this app will actually be used in relation for but possible ideas include riding a bike, being able to use the app in some way while on a boat, having the app help assist you while flying a plane, or even have the app assist you in terms of diving deep underwater where perception of location and angles become unknown.
+
+### 2.2 Benefit to User ###
+Benefits this app can be used can include riding a bike, being able to use the app in some way while on a boat, having the app help assist you while flying a plane, or even have the app assist you in terms of diving deep underwater where perception of location and angles become unknown.
+
+### 2.3 What is it similiar to ? ###
+Other objects in the world that this web app shares simiarities to can be the use of a level in terms of using the gyroscope, the use of google maps in terms of geolocation, and the use of a video camera used for recording something.
+
+### 2.4 How is it unique ###
+This web app will be unique because it will provide the use of combining all three components to then be used for whichever activity you wish to use, it is unknown what specific activity you could use this for but there are many possibilities.
 
 
 ‌
