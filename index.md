@@ -89,6 +89,40 @@ The following paragraph relates directly to this video:
 
 Further research into how a gyroscope in a smartphone works reveals that its primary function is to measure the device's angular velocity, which means it tracks rotational angles over time. Although this concept is simple in theory, its practical applications in smartphones are vast. For instance, the gyroscope is used for functions like straightening photos during editing, improving low-light photography through optical image stabilization, and enhancing augmented reality experiences by accurately displaying objects in a given environment. In summary, the gyroscope tracks changes in the smartphone's angular velocity, enabling a wide range of functionalities that rely on motion and orientation, leading to a wide variety of endless opportunities using a gyroscope.
 
+### 1.4 Possible Design Concepts ###
+
+### Design Concepts Towards Location API ###
+From obtaining the user's location, the web app could work in relation to travelling and maps, telling the user where their current location is on a map. Another possibililty could be to use the phones location to find something, this would be very similiar to Apple's air tag product in a sense or the find my iphone app. A phones location could also be used in a sense for finding what's near the phone istelf, such as locating restaurants near your current location. Lastly, location from the user's phone could be used to store things based on the location, such as geotagged photos, memories, or sounds.
+
+**Pros:** Obtaining the user's location means a web app can offer real-time mapping to help users navigate or find their current location. This can also enable tracking of lost objects and provide personalised, location-based recommendations for nearby places. Additionally, location data can be used for geotagging, allowing users to store and organise memories based on where they were created.
+
+**Cons:** Use of location data in a web app can lead to privacy concerns due to users feeling uncomfortable sharing their current whereabouts. This can also drain battery life and pose security risks if the data is leaked or hacked. Inaccurate location data, such as in areas with poor GPS signal, can lead to unreliable information. Lastly, frequent permission requests regarding location access has the ability to frustrate users, leading to less app use.
+
+### Design Concepts Towards Camera API ###
+With using the user's camera, the web app can have the ability to take photos or videos either with the user's input or automatically without. Scanning of QR codes is another possibility that can be achieved through obtaining the user's camera. A more discrete feature that could be used within the web app could be for the user to either check their face or body through using the device's camera. The phone's camera can also be used as a telescope in a sense as well if used within the right context or it could even be used for obtaining colour schemes from pictures such as taking a photo of a susnet or a painting.
+
+**Pros:** There are various benefits from using the camera of a device, these can include allowing the user to capture photos or videos either manually or automatically, giving flexibility for creative and practical purposes. It can also enable scanning of QR codes to quickly obtain information/payments, the camera can also serve as a personal tool in relation towards checking one's face or body. Versatility of the camera allows it to function like a telescope bringing magnified views, or even as a tool towards extracting colour schemes from images to enhance creative and design possibilities.
+
+**Cons:** Just like obtaining the user's location, using the camera also raises privacy concerns, especially in relation to automatic photo or video captures. Camera access can pose high security risks if not properly secured, these risks can include unauthorised recordings or surveillance. Asides from privacy concerns, use of the camera will also drain battery life much like the location API. On top of this, misuse or unintended camera functions can lead to accidental content creation, leading to user dissatisfaction.
+
+### Design Concepts Towards Gyroscope API ###
+The last API use will be in relation to the gyroscope, where the gyroscope's benefits can include obtaining the device's level status from it's inbuilt gyroscope. It can also be used for 3D scanning or photogrammetry through ensuring an accurate orientation, which then improves capture stability and facilitates the creation of precise 3D models from multiple angles. Very similiar to the purpose of a gyroscope in 3D scanning and photogrammetry, it can also help to stabilise the use of the phone's camera. A gyroscope can even be used for augmented reality viewing such as NightSky, which is a stargazing reference app, where the user can explore a virtual representation of the night sky to identify stars, planets, constellations and satellites. Lastly, another design concept towards the gyroscope could be to include a shaking functionalitiy such as 'shake to play' or 'shake to win', which can be used to build up anticipation for the user or to create a random outcome.
+
+**Pros:** Many benefits include providing the device's level status for usage needing a precise positioning or balance. Gyroscopes greatly benefit 3D scanning and photogrammetry through ensuring accurate orientation and stability. It also stabilises the phone's camera to enhance image and video capturing. Accurate movement tracking is enabled in augmented realities with the use of a gyroscope. A gyroscope can even bring greater engagement through interactive features, better improving the user experience.
+
+**Cons:** Due to the gyroscope's reliance with device movement and orientation tracking, it can lead to inaccurate result if the sensor itself isn't calibrated correctly or if there is excessive shaking and instability. Once again battery life is also a concern if the gyroscope is continually used over an excessive time frame. Integrating a gyroscope functionallity has the ability to detract the user's overall experience and will require careful, thoughtout design.
+
+### Ways Of Using A Screen ###
+There are various ways to interact with screen-based apps. One common method is to gather information, such as using search engines like Google or Firefox. Another use is to communicate with others, either individually or in groups, through apps like Instagram, Facebook, or Snapchat. Screens are also used for financial transactions, such as mobile banking or payments via apps like PayPal or traditional banking apps. The possibilities for using a screen are nearly limitless, with apps offering a range of functions that can combine multiple features or focus on a single purpose. Ultimately, how a screen is used depends on the user's needs and the task they are trying to accomplish.
+
+### 1.5 Double Diamond Design Methodology (Discover and Define) ###
+**Discover**
+
+
+**Define**
+
+
+
 
 
 
