@@ -116,7 +116,21 @@ The last API use will be in relation to the gyroscope, where the gyroscope's ben
 There are various ways to interact with screen-based apps. One common method is to gather information, such as using search engines like Google or Firefox. Another use is to communicate with others, either individually or in groups, through apps like Instagram, Facebook, or Snapchat. Screens are also used for financial transactions, such as mobile banking or payments via apps like PayPal or traditional banking apps. The possibilities for using a screen are nearly limitless, with apps offering a range of functions that can combine multiple features or focus on a single purpose. Ultimately, how a screen is used depends on the user's needs and the task they are trying to accomplish.
 
 ### 1.5 Double Diamond Design Methodology (Discover and Define) ###
+![Alt text](./Images/Double_diamond_model.jpg)
+
+**Reference:** Elmansy, R. (2021, February 9). The Double Diamond Design Thinking Process and How to Use it. Designorate. https://www.designorate.com/the-double-diamond-design-thinking-process-and-how-to-use-it/
+
+
 **Discover**
+
+During the discovery stage, the most effective approach to creating a final idea is to develop multiple concepts. By exploring different options, you can compare and refine these ideas, synthesizing the best elements from each to form a cohesive final solution, which will then serve as the main concept or project.
+
+
+The primary objective of this discovery phase is to gain a deeper understanding of the problem at hand by gathering insights and exploring the broader context surrounding the design challenge (UXPin, 2022). A crucial part of this phase involved researching examples of how similar APIs such as the camera, location, and gyroscope are used across various devices. Several key concepts emerged from Related Projects 2, 3, and 4, each offering unique perspectives. From Related Project 2, the idea of utilising the gyroscope and location APIs to assess real-time map conditions and path quality was particularly influential. Related Project 3 offered insights into leveraging the camera API to record user interactions with the web app for future playback. Lastly, Related Project 4 provided inspiration for using APIs to track and display users' paths on the web app via their smartphones.
+
+In conclusion, these potential ideas will be further analysed and synthesised, incorporating key elements from each project to develop a web app that effectively uses the camera, location, and gyroscope APIs to enhance user interaction and engagement.
+
+**Reference:** UXPin. (2022, September 19). Double Diamond Design Process – The Best Framework for a Successful Product Design. Studio by UXPin. https://www.uxpin.com/studio/blog/double-diamond-design-process/
 
 
 **Define**
