@@ -1,12 +1,12 @@
 # Responsive Design and Technology Task 2 #
-### Mobile Web App That Displays An Overview Of Key Components When Riding a Bike/Motorbike ###
+### Mobile Web App That Displays An Overview Of Key Components When Sailing a Boat ###
 
 ## 1. Conceptualisation ##
 ### 1.1 Design Intent ###
-Summary: A web app that can be used by a user through a website address, then asking for permission to use the user's phone/device's geographic location, camera, and gyroscope for input. As a result, the web app will then be able to produce an output displaying the speed, which is calculated through obtaining the time travelled from point A - point B, along with presenting a display of the current lean/tilt angle. Lastly, it is key as prior knowledge that this web app can be used for anything bike/motorbike related due to the the app utilising the user's geographic location, camera, and gyroscope from their phone while riding a bike/motorbike. It should also be noted that a bike/motorcycle involved activity is not the only situation when this web app can be used, other examples could include using the web app while sailing, flying, snowboarding, etc.
+Summary: A web app that can be used by a user through a website address, then asking for permission to use the user's phone/device's permission to use certain components for input. As a result, the web app will then be able to produce an output displayed on the screen to the user. Lastly, it is key as prior knowledge that this web app can be used for anything boat related due to the the app utilising certain APIs from the user's phone while sailing. It should also be noted that a boat involved activity is not the only situation when this web app can be used, other examples could include using the web app while mountain biking, flying, snowboarding, etc.
 
 ### 1.2 Research ###
-Through using research of other similiar project found on the web, it has helped to gain a deeper understanding of what myself, Sean, and Jay are aiming to achieve for the project, along with how we are going to do so. Research found during this phase will greatly affect what we aim to create paired with each phase during development. This will include how we develop the web interface, how this interface communicates with the user's phone, and what informational components of the user's phone we are aiming to extract data from? The influence of this research will be seen more apparent later within this process journal.
+Through using research of other similiar projects found on the web, it has helped to gain a deeper understanding of what myself, Sean, and Jay are aiming to achieve for the project, along with how we are going to do it. Research found during this phase will greatly affect what we aim to create paired with each phase during development. This will include how we develop the web interface, how this interface communicates with the user's phone, and what informational components of the user's phone we are aiming to extract data from? The influence of this research will be seen more apparent later within this process journal.
 
 ### 1.2.1 Related Project 1 ###
 
@@ -121,8 +121,7 @@ There are various ways to interact with screen-based apps. One common method is 
 **Reference:** Elmansy, R. (2021, February 9). The Double Diamond Design Thinking Process and How to Use it. Designorate. https://www.designorate.com/the-double-diamond-design-thinking-process-and-how-to-use-it/
 
 
-**Discover**
-
+### Discover ###
 During the discovery stage, the most effective approach to creating a final idea is to develop multiple concepts. By exploring different options, you can compare and refine these ideas, synthesizing the best elements from each to form a cohesive final solution, which will then serve as the main concept or project.
 
 
@@ -133,25 +132,42 @@ In conclusion, these potential ideas will be further analysed and synthesised, i
 **Reference:** UXPin. (2022, September 19). Double Diamond Design Process – The Best Framework for a Successful Product Design. Studio by UXPin. https://www.uxpin.com/studio/blog/double-diamond-design-process/
 
 
-**Define**
+### Define ###
+During this stage, the most important and vital aspects in relation to the project are selected and refined to best meet the projects requirements.
 
+Key Questions to answer in the define phase:
 
+    -What is the purpose of this project?
+    -Why is this web app needed?
+    -Who will be using this web app?
+    -What is the scope of this project?
+    -How will this project be implemented?
+    -What problems does this project aim top solve for the users?
+    -What are the constraints and limitations for this web app?
+    -When will the web app be used by it's users?
 
+*Camera, Gyroscope, and Location Web App*
 
+The intial project idea was to create a web app that composed of three main features, a camera, orientaion display, and location. From here we thought that the web app wouldn't be specified in any way but rather a generl use app containing these three features for the user to use with whatever desires they have. However, this concept was too broad and lacked complexity as, this is largely due to the question raised as, why would a user want to use this app if it doesn't have a specific purpose? These main functionalities however, weren't just dumped but expanded and defined in a more udeful manner to the next project idea we decided with.
 
+*Traversing Aid Web App*
 
-## 2. Strucutre of Presentation ##
-### 2.1 Concept Foundation ###
-The concept of my project is that it will be a web app with a simple to use interface involving three core sensor components, a gyroscope, the user's camera, and the user's location. It is uncertain what this app will actually be used in relation for but possible ideas include riding a bike, being able to use the app in some way while on a boat, having the app help assist you while flying a plane, or even have the app assist you in terms of diving deep underwater where perception of location and angles become unknown.
+Expanding from the previous project idea, we came up with the final idea of the web app now being an assisting sailors for while they are out at sea with their boats. It expanded from the previous use of APIs to now incorporate the use of a camera, gyroscope, wind speed and direction, geolocation, and ship speed. This expanded project idea now gave the app a purpose, being to provide sailors core neccessary information relating to their boat, location, and environment around them. From here a clear audience is now defined, being sailors, and a clear purpose for the use of the app, being to improve navigation, decision-making, and simplicity for sailors while at sea.
 
-### 2.2 Benefit to User ###
-Benefits this app can be used can include riding a bike, being able to use the app in some way while on a boat, having the app help assist you while flying a plane, or even have the app assist you in terms of diving deep underwater where perception of location and angles become unknown.
+### 1.7 Final Design Concept ###
+The Traversing Aid Web App will provide sailors real-time data through a live video feed of the boat’s surroundings, incorporated with key statistics of the boat such as orientation (X and Y axis), wind direction and speed, boat speed (knots), and location (longitude and latitude). It utilises APIs for the camera, gyroscope, geolocation, wind, and speed in order to give sailors a comprehensive view of these essential factors that affect the vessel. The app is designed to improve navigation, decision-making, and simplicity while sailing, with an intuitive and responsive interface working across multiple devices (desktop, tablet, and phone), making it a valuable tool for both recreational and professional sailors.
 
-### 2.3 What is it similiar to ? ###
-Other objects in the world that this web app shares simiarities to can be the use of a level in terms of using the gyroscope, the use of google maps in terms of geolocation, and the use of a video camera used for recording something.
+Context of when this web app will be used is when a sailor of a boat wishes to have a live display of these overall statistics regarding the boat. It will prove to be an extremely useful tool for a sailor as it provides a live overview of core elements affecting the vessel.
 
-### 2.4 How is it unique ###
-This web app will be unique because it will provide the use of combining all three components to then be used for whichever activity you wish to use, it is unknown what specific activity you could use this for but there are many possibilities.
+**Why a Traversing Aid Web App?**
 
+These APIs provide a clear and straightforward representation of critical elements for a boat within a web app. By offering quick, easy access to essential data, the app allows users to efficiently analyze key factors affecting their vessel while at sea, enhancing their safety and improving their ability to respond to potential hazards.
+
+Rough drawing display of what a general look of the Traverse Aid Web App will look like:
+
+![Alt text](./Images/Rough%20Drawing%20of%20Web%20App.jpg)
+
+## 2. The Body ##
+### 2.1 Core Components For The Web App ###
 
 ‌
