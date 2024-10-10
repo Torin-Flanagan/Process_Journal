@@ -168,6 +168,38 @@ Rough drawing display of what a general look of the Traverse Aid Web App will lo
 ![Alt text](./Images/Rough%20Drawing%20of%20Web%20App.jpg)
 
 ## 2. The Body ##
-### 2.1 Core Components For The Web App ###
+### 2.1 Core Processes ###
+    -External APIs are used to retrieve real-time data (e.g., weather, wind speed, and boat location).
+    -Data is stored in variables within the code after being received.
+    -Python is used to process and filter the data (e.g., calculating boat speed, tracking weather changes).
+    -JavaScript handles the display of the processed data in the app's user interface.
+    -JavaScript updates elements like live wind speed or the boat's position on the map in real time.
+    -The combination of Python for backend data management and JavaScript for frontend display ensures smooth, real-time functionality for users.
+
+### 2.2 Core Process Relationships ###
+![Alt text](./Images/Core%20Process%20Relationships.jpg)
+
+![Alt text](./Images/Core%20Process%20Relationships_2.jpg)
+
+### 2.3 Pseudocode For the Web App ###
+![Alt text](./Images/Pseudocode_1.jpg)
+
+![Alt text](./Images/Pseudocode_2.jpg)
+
+### 2.4 Main Web App Screen Layouts
+Below are the core 3 screen layouts for the web app, these core screen layouts will be present on desktops, tablets, and mobile phones for the geoview web app.
+
+**Desktop Screen Layout**
+
+![Alt text](./Images/Desktop_Web_App.png)
+
+**Tablet Screen Layout**
+
+![Alt text](./Images/Tablet_Web_App.png)
+
+**Mobile Screen Layout**
+
+![alt text](./Images/Mobile_Web_App.png)
+
 
 ‌
