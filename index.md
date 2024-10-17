@@ -201,5 +201,16 @@ Below are the core 3 screen layouts for the web app, these core screen layouts w
 
 ![alt text](./Images/Mobile_Web_App.png)
 
+### 2.5 Development of Front-End for Web Application ###
+The part of the web application that the user will interact direclty with will be the fron-end of our mobile app. I will generate this part for the user to interact with through using HTML for the web page and Cascade Style Sheeting for the visual appeal of the user interface.
 
+The frontend of the web application will include the following contents:
+
+    **1.** A start page will appear with a button to start the main function of the app, this page will also showcase a brief introduction to what the web app is and how to use it.
+
+    **2.** After the button is pressed, the webpage will display the main function of the app, being a live web recording having overlays on the screen of key metrics.
+
+    **3.** Each key metric will have an on and off toggle for the user to turn whatever metrics they wish to use on.
+
+    **4.** The camera from the user's device will be used, requiring permission from the user of the web application.
 ‌
