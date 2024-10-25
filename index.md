@@ -213,4 +213,55 @@ The frontend of the web application will include the following contents:
     **3.** Each key metric will have an on and off toggle for the user to turn whatever metrics they wish to use on.
 
     **4.** The camera from the user's device will be used, requiring permission from the user of the web application.
-‌
+
+### First Front-End Iteration ###
+
+So far the below image is what has been created regarding the intorduction web page for our web application:
+
+**Introductory Web Page**
+
+‌![Alt text](./Images/Front_End_Development_1.png)
+
+There is still significant work to be done on the front-end, but good progress has been made with the web application so far. The first task was to create a simple introductory webpage, which was straightforward in terms of code development.
+
+The first step was structuring the HTML, starting by declaring the document as HTML using '!DOCTYPE html'. In the 'head' section, meta tags were added to set the character encoding to UTF-8, ensure mobile responsiveness (via the viewport tag), and maintain compatibility with Internet Explorer (X-UA-Compatible). The title of the webpage was set to "Web Application Introductory Page," external stylesheets were linked, and additional CSS was included through an internal style block for layout and appearance.
+
+Next, CSS styling was developed using a flexbox layout to center the content. A black background was applied with Arial fonts. The headings were styled with different colors: h1 in semi-transparent red, and h2 and h3 in yellow. The button that redirects users to the next page has a black background with yellow text to make it stand out, rounded corners, a hover effect that changes it to red, and an outline when focused.
+
+After styling, the HTML content was populated with a title ("Web Application Introduction"), a subheading ("Application Summary"), and instructions explaining that metrics can be toggled, camera permission is required, users can record videos, and a note encouraging users to enjoy the application.
+
+Finally, the interactive button labeled "CLICK ME :)" serves as an important feature, redirecting users to the "main.html" page when clicked. This button acts as a gateway to the main content of the web application, with the overall page providing a user-friendly interface and clear instructions.
+
+**Code developed for the "Web Application Introductory Page"**
+
+![Alt text](./Images/Introductory_Page_Code_1.png)
+
+![Alt text](./Images/Introductory_Page_Code_2.png)
+
+![Alt text](./Images/Introductory_Page_Code_3.png)
+
+The below two images are what has been created so far in terms of the development of the main page for our web application:
+
+**Main Web Page**
+
+‌![Alt text](./Images/Front_End_Development_2.png)
+
+‌![Alt text](./Images/Front_End_Development_3.png)
+
+To create the main web page, I started by declaring the document as HTML using '!DOCTYPE html' and set the language to English, as it was defaulting to French in Google settings for unknown reasons. The page includes meta tags for character encoding, mobile responsiveness, and Internet Explorer compatibility, similar to what was done on the introductory page. Finally, the page title and CSS were defined in the 'style' block.
+
+For the CSS styling, the page features a black background with white text in Arial font. Flexbox is used to center content, and the container and video elements occupy 80% of the page. The metrics (orientation, speed, and camera status) are overlaid on the video and can be toggled on or off via buttons.
+
+The main page utilises a 'video' element to display a live stream from the user's camera (with permission) when the page loads. This then proceeds to the '.overlay' div which contains three hidden metric elements (orientation, speed, and camera), displayed over the video feed with yellow text. By default, the metrics show "N/A" to indicate that they are either off or inactive.
+
+The three toggle buttons allow users to show or hide the orientation, speed, and camera metrics by using the 'toggleMetric()' function. Additionally, the 'startVideo()' function requests camera access to display the live video, while 'toggleMetric()' toggles the visibility of the metrics.
+
+**Code developed for the "Web Application Main Page"**
+
+![Alt text](./Images/Main_Page_Code_1.png)
+
+![Alt text](./Images/Main_Page_Code_2.png)
+
+![Alt text](./Images/Main_Page_Code_3.png)
+
+![Alt text](./Images/Main_Page_Code_4.png)
