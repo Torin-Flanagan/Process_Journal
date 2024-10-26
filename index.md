@@ -265,3 +265,7 @@ The three toggle buttons allow users to show or hide the orientation, speed, and
 ![Alt text](./Images/Main_Page_Code_3.png)
 
 ![Alt text](./Images/Main_Page_Code_4.png)
+
+### What To Do Now? ###
+
+Moving forward, the majority of development will focus on the main web page. There is still significant work to be done, particularly with overlaying key metrics such as speed, orientation, and recording functionality, as well as potentially adding wind direction. Additionally, these overlay elements need to be repositioned so that they align with the edges of the screen, rather than being centred in the middle.
