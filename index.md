@@ -310,3 +310,5 @@ Changes made include the following:
 
 ### Whats Next? ###
 Looking ahead, the button features still require an overlay display on the live camera recording when activated. Additionally, the APIs for each key metric need to be organised; however, this falls outside my responsibilities, as my focus is on the front end rather than the back end and its functionalities. My next steps for the web application will involve finalising the overlay displays for device orientation, wind direction, and speed (kph) on top of the live camera feed.
+
+this is how to do it.
