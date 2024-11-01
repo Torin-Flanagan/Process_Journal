@@ -138,13 +138,21 @@ During this stage, the most important and vital aspects in relation to the proje
 Key Questions to answer in the define phase:
 
     -What is the purpose of this project?
+
     -Why is this web app needed?
+
     -Who will be using this web app?
+
     -What is the scope of this project?
+
     -How will this project be implemented?
+
     -What problems does this project aim top solve for the users?
+
     -What are the constraints and limitations for this web app?
+
     -When will the web app be used by it's users?
+
 
 *Camera, Gyroscope, and Location Web App*
 
@@ -170,11 +178,17 @@ Rough drawing display of what a general look of the Traverse Aid Web App will lo
 ## 2. The Body ##
 ### 2.1 Core Processes ###
     -External APIs are used to retrieve real-time data (e.g., weather, wind speed, and boat location).
+
     -Data is stored in variables within the code after being received.
+
     -Python is used to process and filter the data (e.g., calculating boat speed, tracking weather changes).
+
     -JavaScript handles the display of the processed data in the app's user interface.
+
     -JavaScript updates elements like live wind speed or the boat's position on the map in real time.
+
     -The combination of Python for backend data management and JavaScript for frontend display ensures smooth, real-time functionality for users.
+
 
 ### 2.2 Core Process Relationships ###
 ![Alt text](./Images/Core%20Process%20Relationships.jpg)
@@ -206,13 +220,13 @@ The part of the web application that the user will interact direclty with will b
 
 The frontend of the web application will include the following contents:
 
-    **1.** A start page will appear with a button to start the main function of the app, this page will also showcase a brief introduction to what the web app is and how to use it.
+    1. A start page will appear with a button to start the main function of the app, this page will also showcase a brief introduction to what the web app is and how to use it.
 
-    **2.** After the button is pressed, the webpage will display the main function of the app, being a live web recording having overlays on the screen of key metrics.
+    2. After the button is pressed, the webpage will display the main function of the app, being a live web recording having overlays on the screen of key metrics.
 
-    **3.** Each key metric will have an on and off toggle for the user to turn whatever metrics they wish to use on.
+    3. Each key metric will have an on and off toggle for the user to turn whatever metrics they wish to use on.
 
-    **4.** The camera from the user's device will be used, requiring permission from the user of the web application.
+    4. The camera from the user's device will be used, requiring permission from the user of the web application.
 
 ### First Front-End Iteration ###
 
@@ -248,13 +262,7 @@ The below two images are what has been created so far in terms of the developmen
 
 ‌![Alt text](./Images/Front_End_Development_3.png)
 
-To create the main web page, I started by declaring the document as HTML using '!DOCTYPE html' and set the language to English, as it was defaulting to French in Google settings for unknown reasons. The page includes meta tags for character encoding, mobile responsiveness, and Internet Explorer compatibility, similar to what was done on the introductory page. Finally, the page title and CSS were defined in the 'style' block.
-
-For the CSS styling, the page features a black background with white text in Arial font. Flexbox is used to center content, and the container and video elements occupy 80% of the page. The metrics (orientation, speed, and camera status) are overlaid on the video and can be toggled on or off via buttons.
-
-The main page utilises a 'video' element to display a live stream from the user's camera (with permission) when the page loads. This then proceeds to the '.overlay' div which contains three hidden metric elements (orientation, speed, and camera), displayed over the video feed with yellow text. By default, the metrics show "N/A" to indicate that they are either off or inactive.
-
-The three toggle buttons allow users to show or hide the orientation, speed, and camera metrics by using the 'toggleMetric()' function. Additionally, the 'startVideo()' function requests camera access to display the live video, while 'toggleMetric()' toggles the visibility of the metrics.
+To create the main web page, I started by declaring the document as HTML using '!DOCTYPE html' and set the language to English, as it was defaulting to French in Google settings for unknown reasons. The page includes meta tags for character encoding, mobile responsiveness, and Internet Explorer compatibility, similar to what was done on the introductory page. Finally, the page title and CSS were defined in the 'style' block. For the CSS styling, the page features a black background with white text in Arial font. Flexbox is used to center content, and the container and video elements occupy 80% of the page. The metrics (orientation, speed, and camera status) are overlaid on the video and can be toggled on or off via buttons. The main page utilises a 'video' element to display a live stream from the user's camera (with permission) when the page loads. This then proceeds to the '.overlay' div which contains three hidden metric elements (orientation, speed, and camera), displayed over the video feed with yellow text. By default, the metrics show "N/A" to indicate that they are either off or inactive. The three toggle buttons allow users to show or hide the orientation, speed, and camera metrics by using the 'toggleMetric()' function. Additionally, the 'startVideo()' function requests camera access to display the live video, while 'toggleMetric()' toggles the visibility of the metrics.
 
 **Code developed for the "Web Application Main Page"**
 
@@ -268,4 +276,37 @@ The three toggle buttons allow users to show or hide the orientation, speed, and
 
 ### What To Do Now? ###
 
-Moving forward, the majority of development will focus on the main web page. There is still significant work to be done, particularly with overlaying key metrics such as speed, orientation, and recording functionality, as well as potentially adding wind direction. Additionally, these overlay elements need to be repositioned so that they align with the edges of the screen, rather than being centred in the middle.
+Moving forward, the majority of development will focus on the main web page. There is still significant work to be done, particularly with overlaying key metrics such as speed, orientation, and recording functionality, as well as potentially adding wind direction. Additionally, these overlay elements need to be repositioned so that they align with the edges of the screen, rather than being centred in the middle when toggled off (N/A).
+
+### Second Front-End Iteration ###
+
+**Main Web Page**
+
+Changes made include the following:
+
+    -Further editing the toggle buttons to make them more neat and presentable.
+
+    -Have the toggle buttons display enabled and N/A within the actual button rather than in the middle of the screen.
+
+    -Other small details have been edited like the display of the live camera box.
+
+    -A main title was added to the top middle of the screen displayed in red for clear visualisation.
+
+    -Layouts of each key feature on the main web page have been moved around accordingly.
+
+**Modified Code for the "Web Application Main Page"**
+
+![Alt text](./Images/Main_Page_Code_2.1.png)
+
+![Alt text](./Images/Main_Page_Code_2.2.png)
+
+![Alt text](./Images/Main_Page_Code_2.3.png)
+
+**Current Main Page**
+
+![Alt text](./Images/Main_Page_Development_Phase_2.1.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_2.2.png)
+
+### Whats Next? ###
+Looking ahead, the button features still require an overlay display on the live camera recording when activated. Additionally, the APIs for each key metric need to be organised; however, this falls outside my responsibilities, as my focus is on the front end rather than the back end and its functionalities. My next steps for the web application will involve finalising the overlay displays for device orientation, wind direction, and speed (kph) on top of the live camera feed.
