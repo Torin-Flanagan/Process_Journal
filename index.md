@@ -311,4 +311,8 @@ Changes made include the following:
 ### Whats Next? ###
 Looking ahead, the button features still require an overlay display on the live camera recording when activated. Additionally, the APIs for each key metric need to be organised; however, this falls outside my responsibilities, as my focus is on the front end rather than the back end and its functionalities. My next steps for the web application will involve finalising the overlay displays for device orientation, wind direction, and speed (kph) on top of the live camera feed.
 
-this is how to do it.
+**Group Discussion**
+
+After completing my second iteration of work on our web application, I arranged a meeting with Sean at the UniSC library to discuss our next steps. We outlined the tasks for both front-end and back-end development. My next focus on the front-end will be to link each API, enabling an overlay on the live camera feed that appears when toggled on and disappears when toggled off. Meanwhile, Sean and Jay will work on identifying and integrating the necessary APIs for key features, which will later be formatted for the front-end.
+
+To link each API for overlay display on the live camera feed, I’ll begin by layering a HTML 'canvas' element over the 'video' element, allowing the API data to display as an overlay. CSS will be used to position each overlay according to the toggle settings. Next, I'll retrieve real-time data for each metric (e.g., device orientation, speed, wind direction) from JSON-format APIs, using JavaScript’s 'fetch' method at set intervals to keep overlays updated. Once data is retrieved, the canvas context will format and display it over the live video, with a loop ensuring continuous updates. Finally, I’ll make the overlay responsive to video size and add fallback text in case of API errors or data interruptions.
