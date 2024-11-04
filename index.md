@@ -316,3 +316,38 @@ Looking ahead, the button features still require an overlay display on the live 
 After completing my second iteration of work on our web application, I arranged a meeting with Sean at the UniSC library to discuss our next steps. We outlined the tasks for both front-end and back-end development. My next focus on the front-end will be to link each API, enabling an overlay on the live camera feed that appears when toggled on and disappears when toggled off. Meanwhile, Sean and Jay will work on identifying and integrating the necessary APIs for key features, which will later be formatted for the front-end.
 
 To link each API for overlay display on the live camera feed, I’ll begin by layering a HTML 'canvas' element over the 'video' element, allowing the API data to display as an overlay. CSS will be used to position each overlay according to the toggle settings. Next, I'll retrieve real-time data for each metric (e.g., device orientation, speed, wind direction) from JSON-format APIs, using JavaScript’s 'fetch' method at set intervals to keep overlays updated. Once data is retrieved, the canvas context will format and display it over the live video, with a loop ensuring continuous updates. Finally, I’ll make the overlay responsive to video size and add fallback text in case of API errors or data interruptions.
+
+### Third Front-End Iteration ###
+
+**Main Web Page**
+
+Things added during this third iteration include the following:
+
+    - Overlay boxes were added being red.
+
+    - Overlay text was added inside the overlay box.
+
+    - Each overlay is in a corner (not finished).
+
+    - At the moment the overlays display moch data but the data will be replaced with the API endpoints.
+
+    - Each overlay is linked with the associated toggle box and disappears when toggled off.
+    
+
+**Extended Code For Main Page**
+
+![Alt text](./Images/Main_Page_Code_3.1.png)
+
+![Alt text](./Images/Main_Page_Code_3.2.png)
+
+![Alt text](./Images/Main_Page_Code_3.3.png)
+
+![Alt text](./Images/Main_Page_Code_3.4.png)
+
+**Current Main Page**
+
+![Alt text](./Images/Main_Page_Development_Phase_3.1.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_3.2.png)
+
+### Whars Next? ###
