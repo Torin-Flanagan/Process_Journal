@@ -332,7 +332,7 @@ Things added during this third iteration include the following:
     - At the moment the overlays display moch data but the data will be replaced with the API endpoints.
 
     - Each overlay is linked with the associated toggle box and disappears when toggled off.
-    
+
 
 **Extended Code For Main Page**
 
@@ -350,4 +350,50 @@ Things added during this third iteration include the following:
 
 ![Alt text](./Images/Main_Page_Development_Phase_3.2.png)
 
-### Whars Next? ###
+### Whats Next? ###
+The next priority is to complete the overlay displays on the live camera feed. Once these are fully functional, I can move on to the following steps. After finalising the overlays, the next major task is to ensure that, when the recording button is activated, the website records and saves the video from the moment recording starts until it’s turned off. Additionally, it’s essential to ensure that audio is recorded consistently from when the recording is toggled on until it is turned off.
+
+### Fourth Front-End Iteration
+
+**Main Web Page**
+
+Things added during this fourth iteration include the following:
+
+    - Overlay box (record, wind, speed, and orientation) displays were finalised.
+
+    - The record functionality records and saves videos.
+
+    - The record functionality records and saves audio.
+
+    - The record functionality saves the recording as a webm file in downloads.
+
+    - Permisission of the users camera and microphone must be allowed for the recording overlay to work.
+
+**Extended Code For Main Page**
+
+![Alt text](./Images/Main_Page_Code_4.1.png)
+
+![Alt text](./Images/Main_Page_Code_4.2.png)
+
+![Alt text](./Images/Main_Page_Code_4.3.png)
+
+![Alt text](./Images/Main_Page_Code_4.4.png)
+
+**Current Main Page**
+
+![Alt text](./Images/Main_Page_Development_Phase_4.1.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_4.2.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_4.3.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_4.4.webm)
+
+(./Images/Main_Page_Development_Phase_4.4.webm)
+
+https://1drv.ms/v/c/1bb1864b7ca1ef51/EZuZhKnGdTFAm-P0rvATSHYBJsOuCpJznVfRF_tUt9xe9g?e=bK3Tnd
+
+![Video](./Images/Main_Page_Development_Phase_4.4.webm)
+
+
+### Whats Next? ###
