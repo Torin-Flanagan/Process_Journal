@@ -389,11 +389,8 @@ Things added during this fourth iteration include the following:
 
 ![Alt text](./Images/Main_Page_Development_Phase_4.4.webm)
 
-(./Images/Main_Page_Development_Phase_4.4.webm)
-
 https://1drv.ms/v/c/1bb1864b7ca1ef51/EZuZhKnGdTFAm-P0rvATSHYBJsOuCpJznVfRF_tUt9xe9g?e=bK3Tnd
 
-![Video](./Images/Main_Page_Development_Phase_4.4.webm)
-
+[Download the video](./Images/Main_Page_Development_Phase_4.4.webm)
 
 ### Whats Next? ###
