@@ -387,10 +387,21 @@ Things added during this fourth iteration include the following:
 
 ![Alt text](./Images/Main_Page_Development_Phase_4.3.png)
 
-![Alt text](./Images/Main_Page_Development_Phase_4.4.webm)
+
+
+<video src="Images/Main_Page_Development_Phase_4.4.webm" width="320" height="240" controls></video>
 
 https://1drv.ms/v/c/1bb1864b7ca1ef51/EZuZhKnGdTFAm-P0rvATSHYBJsOuCpJznVfRF_tUt9xe9g?e=bK3Tnd
+
+[![alt text](./Images/Main_Page_Development_Phase_4.4.webm)](./Images/Main_Page_Development_Phase_4.4.webm)
 
 [Download the video](./Images/Main_Page_Development_Phase_4.4.webm)
 
 ### Whats Next? ###
+Moving forward, the next step for the web application is to implement the APIs for the wind direction, device orientation, and speed toggle features. These are the final major components needed to complete the website's core functionality. Once these APIs are fully operational, the application will undergo final checks to ensure all functions work as expected, followed by visual refinements and minor adjustments.
+
+**Main Web Page**
+
+Things added during this fifth iteration include the following:
+
+    - n
