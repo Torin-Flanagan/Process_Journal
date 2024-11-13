@@ -387,21 +387,102 @@ Things added during this fourth iteration include the following:
 
 ![Alt text](./Images/Main_Page_Development_Phase_4.3.png)
 
-
-
-<video src="Images/Main_Page_Development_Phase_4.4.webm" width="320" height="240" controls></video>
-
+Link for video:
 https://1drv.ms/v/c/1bb1864b7ca1ef51/EZuZhKnGdTFAm-P0rvATSHYBJsOuCpJznVfRF_tUt9xe9g?e=bK3Tnd
-
-[![alt text](./Images/Main_Page_Development_Phase_4.4.webm)](./Images/Main_Page_Development_Phase_4.4.webm)
-
-[Download the video](./Images/Main_Page_Development_Phase_4.4.webm)
 
 ### Whats Next? ###
 Moving forward, the next step for the web application is to implement the APIs for the wind direction, device orientation, and speed toggle features. These are the final major components needed to complete the website's core functionality. Once these APIs are fully operational, the application will undergo final checks to ensure all functions work as expected, followed by visual refinements and minor adjustments.
+
+**Group Discussion**
+
+Before implementing the necessary APIs for each toggle feature, Sean, Jay, and I held a group discussion to plan our next steps. We decided to use the Geolocation API to display both speed and the device’s latitude and longitude (instead of wind direction), and the Device Orientation API to show the device’s X, Y, and Z values. Additionally, we noted that the camera recording toggle would utilise the Media Capture API to record video and audio. After finalising our API choices, we agreed that once they were correctly implemented, we would need to use the Canvas function in HTML to ensure the recording includes the overlays in the saved video using JavaScript functionality.
 
 **Main Web Page**
 
 Things added during this fifth iteration include the following:
 
-    - n
+    - API for device orientation toggle.
+    - API for location toggle.
+    - API for speed toggle.
+    - Required permission and privacy control handling.
+    - Live feedback from the APIs.
+
+**Extended Code For Main Page**
+
+![Alt text](./Images/Main_Page_Code_5.1.png)
+
+![Alt text](./Images/Main_Page_Code_5.2.png)
+
+![Alt text](./Images/Main_Page_Code_5.3.png)
+
+![Alt text](./Images/Main_Page_Code_5.4.png)
+
+![Alt text](./Images/Main_Page_Code_5.5.png)
+
+![Alt text](./Images/Main_Page_Code_5.6.png)
+
+![Alt text](./Images/Main_Page_Code_5.7.png)
+
+**How It Works**
+
+The HTML Structure:
+
+    -The HTML header <head> sets key metadata regarding character encoding, viewport settings for responsive design, and links the CSS style folder.
+
+    -A title is displayed at the top using the following code <div class = "heading-container">.
+
+    -The live streaming video is used through the device's camera from a HTML5 video element using <video id="video" autoplay playsinline muted>.
+
+    -Each overlay is programmed to start hidden until toggled on (recordOverlay, locationOverlay, orientationOverlay, and speedOverlay).
+
+    -For each button toggle and it's associated metric, it's used to either show or hide the overlay, updating the display.
+
+The JavaScript Functionality:
+
+    -Each metric's state is either enabled or disabled, which is tracked using overlayEnabled.
+
+    -The toggleMetric() function toggles each metric's display based on the metric's start/stop tracking functions.
+
+    -Camera access, video stream initialisation, and set up of MediaRecorder to capture the video are all achieved using startVideo().
+
+    -Starting and stopping the video record, along with storing chunks in recordedChunks are done through using startRecording() and stopRecording().
+
+    -Recorded video chunks are compiled and promted to be downloaded through using saveRecording().
+
+    -Device orientation permission is requested through using startOrientationTracking(), listening for orientation events, updating the overlay and angles.
+
+    -Tracking of the devices orientation is stopped by removing the orientation event listener with stopOrientationTracking().
+
+    -By using navigator.geolocation.watchPosition(), the devices latitude and longitude are obtained and displayed in the overlay through using startLocationTracking().
+
+    -Tracking of the device's location is stopped by clearing the geolocation watcher with stopLocationTracking().
+
+    -Speed is calculated based on the devices changes in location through using navigator.geolocation.watchPosition() within startSpeedtracking().
+
+    -Distance is then calculated between two geographical points (longitude and latitude) with the Haversine formula by using calculateDistance().
+
+    -Distance in kilometres between two coordinates are computed using calculateDistance().
+
+    -Speed is displayed in the overlay with four decimal places through using updateSpeedDisplay().
+
+    -Speed tracking is stopped by clearing the speed watch with stopSpeedTracking().
+
+    -When the page loads, startVideo is called to initialise the video stream from window.onload.
+
+**Current Main Page**
+
+![Alt text](./Images/Main_Page_Development_Phase_5.1.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_5.2.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_5.3.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_5.4.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_5.5.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_5.6.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_5.7.png)
+
+![Alt text](./Images/Main_Page_Development_Phase_5.8.png)
