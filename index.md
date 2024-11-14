@@ -505,24 +505,38 @@ Below is another version of the main page that Sean developed for our Geoview we
 
 ![Alt text](./Images/Sean_Main_Page_1.6.png)
 
-## The Final Product ##
+## 3. The Final Product ##
 ### What is the project ? ###
 
-Below is the final prototype I have created for our Geoview web application, this final version showcases both the start page and main page along with each page's CSS visual styling as well. The way this web application works is that based on the users input for each metric (toggled on and off) it will present a live overlay on the camera recording of the information reagrding that metric.
+Below is the final prototype I’ve developed for our Geoview web application. This version includes both the start and main pages, as well as the CSS visual styling for each. The application works by displaying a live overlay on the camera recording, with real-time information based on the user’s selection of metrics. These metrics can be toggled on or off, and the overlays dynamically update to reflect the chosen data.
 
 ### Context Of Which The Project Exists ###
 
-The environements and industries our Geoview project would be part of if implemented as a web application widely used would be in many different types of situation as this web application is broad in terms of what each metric and the live recording an be used for. However, to be more specific, examples of where the Geoview web application would be used could include marine navigation and safety, adventure sports such as hiking, motorsports like car racing, urban exploration and city tours, etc.
+The Geoview web application would be applicable across a wide range of industries and environments, as it is versatile in terms of the metrics and live recording it can handle. This broad functionality means the application could be used in many different situations. To provide more specific examples, potential uses for the Geoview web application could include marine navigation and safety, adventure sports such as hiking, motorsports like car racing, and even urban exploration and city tours, among others.
 
-In terms of target users for our Geoview web application, this includes any person who needs a live display of their current location, orientation, speed, or camera along witht the potenetial need to look back at the recording for future reference of the overlay features. Examples of target users could be a driver for a car racing company looking back at the recording of the race and each major metric change that occured during the user's race. Another example could be drone operators and ariel photographers using Geoview for safe and precise navigation. One more example could be research teams for environmental monitoring requiring key stats to be visible for accurate monitoring and documentation.
+In terms of target users, Geoview is designed for anyone who requires a live display of their current location, orientation, speed, or camera, as well as the ability to review recordings for future reference. Examples of target users include:
 
-Specific problems or gaps that the development of our Geoview web application aims to solve are that the web application can be used for many different areas that involve a savable live recording with key metrics (speed, orientation, and location). This means that for the user, Geoview doesn't have to be used for one specific problem or need but rather can be used based on various requirements of the user. An example of a problem our Geoview web application solves is that for research teams trying to monitor environements, they could use our Geoview web application to record a trip monitoring the area to then be looked back at, showcasing the latitudes and longitudes of where they were, X, Y, and Z values of where the team are located, and the speed the research team is moving at. This means that it makes it a lot easier for a research team to better understand new environemental changes through looking back at what they found in more detail due to the live metrics showcasing key information of the area.
+- Car racing drivers who may use the application to review race recordings and track significant metric changes that occurred during the race.
+
+- Drone operators and aerial photographers who could use Geoview for safe and precise navigation, ensuring accurate positioning and recording.
+
+- Research teams focused on environmental monitoring who require key statistics to be displayed for precise monitoring and documentation of environmental conditions.
+
+One of the key problems or gaps that Geoview aims to solve is its ability to be used across various areas that require a savable live recording with critical metrics such as speed, orientation, and location. This flexibility allows the application to be adapted for a range of user needs, rather than being restricted to a single use case. For instance, research teams monitoring environmental changes could use Geoview to record their journey, capturing critical data such as latitude, longitude, and X, Y, Z orientation values. This capability allows them to review the journey in detail, providing a clearer understanding of the environmental changes they encountered. By showcasing real-time metrics alongside the recording, Geoview helps teams analyse their findings more effectively, offering a deeper insight into the conditions of the area.
+
 
 ### Current Solution And Limitations ###
 
-The current solution we have developed as Geoview incorporates a start and main page, where from the start page it displays the instructions of how to use the web app and a button to click which then takes the user to the main page. Once on the main page, this is where all the good stuff occurs, it has the live camera recording in the middle of the screen where on the side there are four buttons you can toggle on and off (Camera Record, Location, Device Orientation, and Speed). Each overlay appears in a corner of the live camera box when toggled on and disappears when toggled off. The data that is presented in each overlay is live in relation to the user's device through using APIs for speed, location, orientation, and camera record. When the camera record button is toggled on it records the visuals that display in the live camera box until toggled off, which is then prompted as a downloadable webm file for the user to view the video and audio display reocrded.
+The current solution we’ve developed for Geoview incorporates both a start page and a main page. On the start page, users are presented with instructions on how to use the web app, along with a button to navigate to the main page. Once on the main page, the core functionality of the app takes place. The live camera recording is displayed centrally on the screen, with four toggle buttons on the side: Camera Record, Location, Device Orientation, and Speed.
 
-Limitations of the Geoview web application are that due to the web application only being a prototype, the overlays aren't seen in the saved recording when the record button is toggled on and off. Another limitation is that due to the location and speed overlays using the same geolocation API, there is a bug that when one overlay is being used and you turn the other one one, the other one doesn't work properly and times out. One more limitation is that the overlays are slow in terms of providing real-time data, I tried my best to try and make the overlays work faster but it wouldn't work.
+Each overlay appears in a corner of the live camera feed when toggled on, and disappears when toggled off. The data presented in each overlay is live, pulling real-time information from the user’s device through APIs for speed, location, orientation, and camera recording. When the Camera Record button is toggled on, the application records the visuals from the live camera feed until the button is toggled off. The recorded video, including both visual and audio data, is then available as a downloadable webm file for the user to review.
+
+Limitations of the Geoview Web Application:
+- Overlay Data Not Included in Recordings: Since the web application is currently a prototype, overlays do not appear in the saved recordings when the Camera Record button is toggled on. This means that, although the overlays are visible during live use, they are not captured in the recorded video.
+
+- Geolocation API Conflict: Both the Location and Speed overlays rely on the same geolocation API. As a result, there is a bug where activating one overlay causes the other to malfunction or time out. This is a limitation of the current geolocation implementation.
+
+- Delayed Overlay Data: The real-time data presented in the overlays is somewhat delayed, meaning there is a lag in the updates of Location, Speed, and Orientation metrics. Despite efforts to optimise the speed of these updates, the delay persists due to limitations in the current prototype.
 
 ### Start Page Code ###
 
@@ -585,4 +599,14 @@ Limitations of the Geoview web application are that due to the web application o
 **Link For Video**
 https://1drv.ms/v/c/1bb1864b7ca1ef51/Eel4H6QTW6FJgiryo6UctAUBZgQ9vgi1hZYz4dTOyXz7XQ?e=ypDIiQ
 
-## Reflection ##
+## 4. Reflection ##
+
+In terms of future improvements, I would like to expand the variety of overlays to include metrics such as wind speed, temperature, humidity, and more.
+
+I also wish that the real-time data for each overlay updated more quickly, as this would significantly enhance the overall functionality of the web application.
+
+Overall, I am satisfied with the progress that myself, Sean, and Jay have made with the Geoview web application. It remains a complex and feature-rich project, utilizing APIs, custom HTML, JavaScript, and CSS to deliver a fully functional web application.
+
+The most challenging aspect of developing the Geoview web application was integrating and effectively using the various APIs. While the custom programming to ensure the APIs worked seamlessly with our web app wasn’t particularly difficult, getting the APIs to communicate properly with our system was a major hurdle. Another challenge was implementing the camera record button to save the recording as a file. This was particularly tough for me, as I had no prior experience in programming the saving of live video streams to files.
+
+Despite these challenges, I thoroughly enjoyed this group project. It has provided me with valuable experience in JavaScript programming and working with APIs to retrieve real-time data to achieve the desired outcomes for the Geoview web application.
