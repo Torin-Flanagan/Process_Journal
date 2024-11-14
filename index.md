@@ -1,5 +1,5 @@
-# Responsive Design and Technology Task 2 #
-### Mobile Web App That Displays An Overview Of Key Components When Sailing a Boat ###
+# Responsive Design and Technology Task 3 #
+### Mobile web app that displays a savable live recording with key metric overlays (orientation, location, and speed) ###
 
 ## 1. Conceptualisation ##
 ### 1.1 Design Intent ###
@@ -120,21 +120,19 @@ The last API use will be in relation to the gyroscope, where the gyroscope's ben
 There are various ways to interact with screen-based apps. One common method is to gather information, such as using search engines like Google or Firefox. Another use is to communicate with others, either individually or in groups, through apps like Instagram, Facebook, or Snapchat. Screens are also used for financial transactions, such as mobile banking or payments via apps like PayPal or traditional banking apps. The possibilities for using a screen are nearly limitless, with apps offering a range of functions that can combine multiple features or focus on a single purpose. Ultimately, how a screen is used depends on the user's needs and the task they are trying to accomplish.
 
 ### 1.5 Double Diamond Design Methodology (Discover and Define) ###
+
 ![Alt text](./Images/Double_diamond_model.jpg)
 
 **Reference:** Elmansy, R. (2021, February 9). The Double Diamond Design Thinking Process and How to Use it. Designorate. https://www.designorate.com/the-double-diamond-design-thinking-process-and-how-to-use-it/
 
-
 ### Discover ###
 During the discovery stage, the most effective approach to creating a final idea is to develop multiple concepts. By exploring different options, you can compare and refine these ideas, synthesizing the best elements from each to form a cohesive final solution, which will then serve as the main concept or project.
-
 
 The primary objective of this discovery phase is to gain a deeper understanding of the problem at hand by gathering insights and exploring the broader context surrounding the design challenge (UXPin, 2022). A crucial part of this phase involved researching examples of how similar APIs such as the camera, location, and gyroscope are used across various devices. Several key concepts emerged from Related Projects 2, 3, and 4, each offering unique perspectives. From Related Project 2, the idea of utilising the gyroscope and location APIs to assess real-time map conditions and path quality was particularly influential. Related Project 3 offered insights into leveraging the camera API to record user interactions with the web app for future playback. Lastly, Related Project 4 provided inspiration for using APIs to track and display users' paths on the web app via their smartphones.
 
 In conclusion, these potential ideas will be further analysed and synthesised, incorporating key elements from each project to develop a web app that effectively uses the camera, location, and gyroscope APIs to enhance user interaction and engagement.
 
 **Reference:** UXPin. (2022, September 19). Double Diamond Design Process – The Best Framework for a Successful Product Design. Studio by UXPin. https://www.uxpin.com/studio/blog/double-diamond-design-process/
-
 
 ### Define ###
 During this stage, the most important and vital aspects in relation to the project are selected and refined to best meet the projects requirements.
@@ -156,7 +154,6 @@ Key Questions to answer in the define phase:
     -What are the constraints and limitations for this web app?
 
     -When will the web app be used by it's users?
-
 
 *Camera, Gyroscope, and Location Web App*
 
@@ -193,18 +190,19 @@ Rough drawing display of what a general look of the Traverse Aid Web App will lo
 
     -The combination of Python for backend data management and JavaScript for frontend display ensures smooth, real-time functionality for users.
 
-
 ### 2.2 Core Process Relationships ###
+
 ![Alt text](./Images/Core%20Process%20Relationships.jpg)
 
 ![Alt text](./Images/Core%20Process%20Relationships_2.jpg)
 
 ### 2.3 Pseudocode For the Web App ###
+
 ![Alt text](./Images/Pseudocode_1.jpg)
 
 ![Alt text](./Images/Pseudocode_2.jpg)
 
-### 2.4 Main Web App Screen Layouts
+### 2.4 Main Page Screen Layouts ###
 Below are the core 3 screen layouts for the web app, these core screen layouts will be present on desktops, tablets, and mobile phones for the geoview web app.
 
 **Desktop Screen Layout**
@@ -219,7 +217,7 @@ Below are the core 3 screen layouts for the web app, these core screen layouts w
 
 ![alt text](./Images/Mobile_Web_App.png)
 
-### 2.5 Development of Front-End for Web Application ###
+### 2.5 Development for Web Application ###
 The part of the web application that the user will interact direclty with will be the fron-end of our mobile app. I will generate this part for the user to interact with through using HTML for the web page and Cascade Style Sheeting for the visual appeal of the user interface.
 
 The frontend of the web application will include the following contents:
@@ -232,8 +230,7 @@ The frontend of the web application will include the following contents:
 
     4. The camera from the user's device will be used, requiring permission from the user of the web application.
 
-### First Front-End Iteration ###
-
+### First Iteration ###
 So far the below image is what has been created regarding the intorduction web page for our web application:
 
 **Introductory Web Page**
@@ -279,10 +276,9 @@ To create the main web page, I started by declaring the document as HTML using '
 ![Alt text](./Images/Main_Page_Code_4.png)
 
 ### What To Do Now? ###
-
 Moving forward, the majority of development will focus on the main web page. There is still significant work to be done, particularly with overlaying key metrics such as speed, orientation, and recording functionality, as well as potentially adding wind direction. Additionally, these overlay elements need to be repositioned so that they align with the edges of the screen, rather than being centred in the middle when toggled off (N/A).
 
-### Second Front-End Iteration ###
+### Second Iteration ###
 
 **Main Web Page**
 
@@ -321,7 +317,7 @@ After completing my second iteration of work on our web application, I arranged 
 
 To link each API for overlay display on the live camera feed, I’ll begin by layering a HTML 'canvas' element over the 'video' element, allowing the API data to display as an overlay. CSS will be used to position each overlay according to the toggle settings. Next, I'll retrieve real-time data for each metric (e.g., device orientation, speed, wind direction) from JSON-format APIs, using JavaScript’s 'fetch' method at set intervals to keep overlays updated. Once data is retrieved, the canvas context will format and display it over the live video, with a loop ensuring continuous updates. Finally, I’ll make the overlay responsive to video size and add fallback text in case of API errors or data interruptions.
 
-### Third Front-End Iteration ###
+### Third Iteration ###
 
 **Main Web Page**
 
@@ -357,7 +353,7 @@ Things added during this third iteration include the following:
 ### Whats Next? ###
 The next priority is to complete the overlay displays on the live camera feed. Once these are fully functional, I can move on to the following steps. After finalising the overlays, the next major task is to ensure that, when the recording button is activated, the website records and saves the video from the moment recording starts until it’s turned off. Additionally, it’s essential to ensure that audio is recorded consistently from when the recording is toggled on until it is turned off.
 
-### Fourth Front-End Iteration
+### Fourth Iteration ###
 
 **Main Web Page**
 
@@ -396,6 +392,8 @@ https://1drv.ms/v/c/1bb1864b7ca1ef51/EZuZhKnGdTFAm-P0rvATSHYBJsOuCpJznVfRF_tUt9x
 
 ### Whats Next? ###
 Moving forward, the next step for the web application is to implement the APIs for the wind direction, device orientation, and speed toggle features. These are the final major components needed to complete the website's core functionality. Once these APIs are fully operational, the application will undergo final checks to ensure all functions work as expected, followed by visual refinements and minor adjustments.
+
+### Fifth Iteration ###
 
 **Group Discussion**
 
@@ -490,3 +488,101 @@ The JavaScript Functionality:
 ![Alt text](./Images/Main_Page_Development_Phase_5.7.png)
 
 ![Alt text](./Images/Main_Page_Development_Phase_5.8.png)
+
+**Sean's Version Of The Main Page**
+
+Below is another version of the main page that Sean developed for our Geoview web application. In the future, we plan to merge his design with mine to create the final version. However, due to time constraints, we couldn’t combine both versions meaningfully. If more time had been available, we would have included Sean's enhanced visual elements, such as the speedometer for speed display and a red border around the live video feed to indicate recording. At the same time, my version’s elements like the device's location display, API functionalities for each metric, and overall page styling would also be part of the final design. Overall, my version covers each API’s functionality and the main page’s features more comprehensively, while Sean’s visual displays, specifically the speedometer and live camera recording indicator, are more advanced, as mine currently use simple live text.
+
+![Alt text](./Images/Sean_Main_Page_1.1.png)
+
+![Alt text](./Images/Sean_Main_Page_1.2.png)
+
+![Alt text](./Images/Sean_Main_Page_1.3.png)
+
+![Alt text](./Images/Sean_Main_Page_1.4.png)
+
+![Alt text](./Images/Sean_Main_Page_1.5.png)
+
+![Alt text](./Images/Sean_Main_Page_1.6.png)
+
+## The Final Product ##
+### What is the project ? ###
+
+Below is the final prototype I have created for our Geoview web application, this final version showcases both the start page and main page along with each page's CSS visual styling as well. The way this web application works is that based on the users input for each metric (toggled on and off) it will present a live overlay on the camera recording of the information reagrding that metric.
+
+### Context Of Which The Project Exists ###
+
+The environements and industries our Geoview project would be part of if implemented as a web application widely used would be in many different types of situation as this web application is broad in terms of what each metric and the live recording an be used for. However, to be more specific, examples of where the Geoview web application would be used could include marine navigation and safety, adventure sports such as hiking, motorsports like car racing, urban exploration and city tours, etc.
+
+In terms of target users for our Geoview web application, this includes any person who needs a live display of their current location, orientation, speed, or camera along witht the potenetial need to look back at the recording for future reference of the overlay features. Examples of target users could be a driver for a car racing company looking back at the recording of the race and each major metric change that occured during the user's race. Another example could be drone operators and ariel photographers using Geoview for safe and precise navigation. One more example could be research teams for environmental monitoring requiring key stats to be visible for accurate monitoring and documentation.
+
+Specific problems or gaps that the development of our Geoview web application aims to solve are that the web application can be used for many different areas that involve a savable live recording with key metrics (speed, orientation, and location). This means that for the user, Geoview doesn't have to be used for one specific problem or need but rather can be used based on various requirements of the user. An example of a problem our Geoview web application solves is that for research teams trying to monitor environements, they could use our Geoview web application to record a trip monitoring the area to then be looked back at, showcasing the latitudes and longitudes of where they were, X, Y, and Z values of where the team are located, and the speed the research team is moving at. This means that it makes it a lot easier for a research team to better understand new environemental changes through looking back at what they found in more detail due to the live metrics showcasing key information of the area.
+
+### Current Solution And Limitations ###
+
+The current solution we have developed as Geoview incorporates a start and main page, where from the start page it displays the instructions of how to use the web app and a button to click which then takes the user to the main page. Once on the main page, this is where all the good stuff occurs, it has the live camera recording in the middle of the screen where on the side there are four buttons you can toggle on and off (Camera Record, Location, Device Orientation, and Speed). Each overlay appears in a corner of the live camera box when toggled on and disappears when toggled off. The data that is presented in each overlay is live in relation to the user's device through using APIs for speed, location, orientation, and camera record. When the camera record button is toggled on it records the visuals that display in the live camera box until toggled off, which is then prompted as a downloadable webm file for the user to view the video and audio display reocrded.
+
+Limitations of the Geoview web application are that due to the web application only being a prototype, the overlays aren't seen in the saved recording when the record button is toggled on and off. Another limitation is that due to the location and speed overlays using the same geolocation API, there is a bug that when one overlay is being used and you turn the other one one, the other one doesn't work properly and times out. One more limitation is that the overlays are slow in terms of providing real-time data, I tried my best to try and make the overlays work faster but it wouldn't work.
+
+### Start Page Code ###
+
+![Alt text](./Images/Start_Page_Final_Code_1.1.png)
+
+![Alt text](./Images/Start_Page_Final_Code_1.2.png)
+
+![Alt text](./Images/Start_Page_Final_Code_1.3.png)
+
+### Main Page Code ###
+
+![Alt text](./Images/Main_Page_Final_Code_1.1.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.2.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.3.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.4.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.5.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.6.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.7.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.8.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.9.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.10.png)
+
+![Alt text](./Images/Main_Page_Final_Code_1.11.png)
+
+### Final Start Page ###
+
+![Alt text](./Images/Intro_Page_Final_1.1.png)
+
+![Alt text](./Images/Intro_Page_Final_1.2.png)
+
+### Final Main Page ###
+
+![Alt text](./Images/Main_Page_Final_1.1.png)
+
+![Alt text](./Images/Main_Page_Final_1.2.png)
+
+![Alt text](./Images/Main_Page_Final_1.3.1.png)
+
+![Alt text](./Images/Main_Page_Final_1.3.png)
+
+![Alt text](./Images/Main_Page_Final_1.4.png)
+
+![Alt text](./Images/Main_Page_Final_1.5.png)
+
+![Alt text](./Images/Main_Page_Final_1.6.png)
+
+![Alt text](./Images/Main_Page_Final_1.7.png)
+
+![Alt text](./Images/Main_Page_Final_1.8.png)
+
+**Link For Video**
+https://1drv.ms/v/c/1bb1864b7ca1ef51/Eel4H6QTW6FJgiryo6UctAUBZgQ9vgi1hZYz4dTOyXz7XQ?e=ypDIiQ
+
+## Reflection ##
