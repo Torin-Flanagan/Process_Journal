@@ -541,7 +541,7 @@ The current solution we’ve developed for GeoView incorporates both a start pag
 
 Each overlay appears in a corner of the live camera feed when toggled on, and disappears when toggled off. The data presented in each overlay is live, pulling real-time information from the user’s device through APIs for speed, location, orientation, and camera recording. When the Camera Record button is toggled on, the application records the visuals from the live camera feed until the button is toggled off. The recorded video, including both visual and audio data, is then available as a downloadable webm file for the user to review.
 
-Limitations of the Geoview Web Application:
+Limitations of the GeoView Web Application:
 
 - Overlay Data Not Included In Recordings: Since the web application is currently a prototype, overlays do not appear in the saved recordings when the Camera Record button is toggled on. This means that, although the overlays are visible during live use, they are not captured in the recorded video. This would have been the final component to add for GeoView, but unfortunately we ran out of time to address this final feature.
 
